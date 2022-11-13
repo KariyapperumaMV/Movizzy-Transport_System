@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>RiderRegisterServlet</servlet-name>
+		<servlet-class>com.RiderRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiderRegisterServlet</servlet-name>
+		<url-pattern>/regRider</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DriverRegisterServlet</servlet-name>
+		<servlet-class>com.DriverRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DriverRegisterServlet</servlet-name>
+		<url-pattern>/regDriver</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RiderLoginServlet</servlet-name>
+		<servlet-class>com.RiderLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiderLoginServlet</servlet-name>
+		<url-pattern>/RiderLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RiderNewRideServlet</servlet-name>
+		<servlet-class>com.RiderNewRideServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiderNewRideServlet</servlet-name>
+		<url-pattern>/RiderNewRide</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RidersAccountServlet</servlet-name>
+		<servlet-class>com.RidersAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RidersAccountServlet</servlet-name>
+		<url-pattern>/RidersAccount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateRiderServlet</servlet-name>
+		<servlet-class>com.UpdateRiderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateRiderServlet</servlet-name>
+		<url-pattern>/RidersAccountUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RiderDeleteServlet</servlet-name>
+		<servlet-class>com.RiderDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiderDeleteServlet</servlet-name>
+		<url-pattern>/DeleteRider</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RiderRidesServlet</servlet-name>
+		<servlet-class>com.RiderRidesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RiderRidesServlet</servlet-name>
+		<url-pattern>/RiderRides</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
